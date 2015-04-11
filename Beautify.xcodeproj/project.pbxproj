@@ -30,6 +30,14 @@
 		79A0EF8A1AD99F46005EBEF5 /* ProfessionalService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF891AD99F46005EBEF5 /* ProfessionalService.m */; };
 		79A0EF8D1AD9A03D005EBEF5 /* ServicesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF8C1AD9A03D005EBEF5 /* ServicesService.m */; };
 		79A0EF901AD9A057005EBEF5 /* CustomerService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF8F1AD9A057005EBEF5 /* CustomerService.m */; };
+		79A0EF931AD9ADAE005EBEF5 /* Service.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF921AD9ADAE005EBEF5 /* Service.m */; };
+		79A0EF991AD9ADAF005EBEF5 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF981AD9ADAF005EBEF5 /* Customer.m */; };
+		79A0EFA01AD9AE78005EBEF5 /* ProfessionalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF9F1AD9AE78005EBEF5 /* ProfessionalCell.m */; };
+		79A0EFA51AD9B3EA005EBEF5 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFA41AD9B3EA005EBEF5 /* BaseViewController.m */; };
+		79A0EFA71AD9B8D1005EBEF5 /* ProfessionalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EFA61AD9B8D1005EBEF5 /* ProfessionalCell.xib */; };
+		79A0EFAD1AD9C38E005EBEF5 /* Professional.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFAC1AD9C38E005EBEF5 /* Professional.m */; };
+		79A0EFB91AD9C640005EBEF5 /* JSONObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFB81AD9C640005EBEF5 /* JSONObjects.m */; };
+		79A0EFBC1AD9CC20005EBEF5 /* ProfessionalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFBB1AD9CC20005EBEF5 /* ProfessionalDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +93,21 @@
 		79A0EF8C1AD9A03D005EBEF5 /* ServicesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesService.m; sourceTree = "<group>"; };
 		79A0EF8E1AD9A057005EBEF5 /* CustomerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerService.h; sourceTree = "<group>"; };
 		79A0EF8F1AD9A057005EBEF5 /* CustomerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerService.m; sourceTree = "<group>"; };
+		79A0EF911AD9ADAE005EBEF5 /* Service.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Service.h; sourceTree = "<group>"; };
+		79A0EF921AD9ADAE005EBEF5 /* Service.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Service.m; sourceTree = "<group>"; };
+		79A0EF971AD9ADAF005EBEF5 /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Customer.h; sourceTree = "<group>"; };
+		79A0EF981AD9ADAF005EBEF5 /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Customer.m; sourceTree = "<group>"; };
+		79A0EF9E1AD9AE78005EBEF5 /* ProfessionalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfessionalCell.h; sourceTree = "<group>"; };
+		79A0EF9F1AD9AE78005EBEF5 /* ProfessionalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessionalCell.m; sourceTree = "<group>"; };
+		79A0EFA31AD9B3EA005EBEF5 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		79A0EFA41AD9B3EA005EBEF5 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		79A0EFA61AD9B8D1005EBEF5 /* ProfessionalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfessionalCell.xib; sourceTree = "<group>"; };
+		79A0EFAB1AD9C38E005EBEF5 /* Professional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Professional.h; sourceTree = "<group>"; };
+		79A0EFAC1AD9C38E005EBEF5 /* Professional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Professional.m; sourceTree = "<group>"; };
+		79A0EFB71AD9C640005EBEF5 /* JSONObjects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONObjects.h; sourceTree = "<group>"; };
+		79A0EFB81AD9C640005EBEF5 /* JSONObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONObjects.m; sourceTree = "<group>"; };
+		79A0EFBA1AD9CC20005EBEF5 /* ProfessionalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfessionalDetailViewController.h; sourceTree = "<group>"; };
+		79A0EFBB1AD9CC20005EBEF5 /* ProfessionalDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessionalDetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +157,8 @@
 				79A0EF411AD984FB005EBEF5 /* Main.storyboard */,
 				79A0EF441AD984FC005EBEF5 /* Images.xcassets */,
 				79A0EF461AD984FC005EBEF5 /* LaunchScreen.xib */,
+				79A0EFB61AD9C621005EBEF5 /* Util */,
+				79A0EF9C1AD9AE52005EBEF5 /* Cells */,
 				79A0EF6E1AD98D3B005EBEF5 /* Frameworks */,
 				79A0EF5D1AD98563005EBEF5 /* Components */,
 				79A0EF5E1AD98563005EBEF5 /* Domain */,
@@ -173,6 +198,7 @@
 		79A0EF5D1AD98563005EBEF5 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				79A0EFB21AD9C5D8005EBEF5 /* Json Objects */,
 				79A0EF6A1AD9873D005EBEF5 /* Model */,
 			);
 			path = Components;
@@ -182,6 +208,12 @@
 			isa = PBXGroup;
 			children = (
 				79A0EF381AD984FB005EBEF5 /* Beautify.xcdatamodeld */,
+				79A0EF971AD9ADAF005EBEF5 /* Customer.h */,
+				79A0EF981AD9ADAF005EBEF5 /* Customer.m */,
+				79A0EF911AD9ADAE005EBEF5 /* Service.h */,
+				79A0EF921AD9ADAE005EBEF5 /* Service.m */,
+				79A0EFAB1AD9C38E005EBEF5 /* Professional.h */,
+				79A0EFAC1AD9C38E005EBEF5 /* Professional.m */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -218,6 +250,10 @@
 				79A0EF7D1AD998C9005EBEF5 /* ScheduleViewController.m */,
 				79A0EF7F1AD998D8005EBEF5 /* FavoritesViewController.h */,
 				79A0EF801AD998D8005EBEF5 /* FavoritesViewController.m */,
+				79A0EFA31AD9B3EA005EBEF5 /* BaseViewController.h */,
+				79A0EFA41AD9B3EA005EBEF5 /* BaseViewController.m */,
+				79A0EFBA1AD9CC20005EBEF5 /* ProfessionalDetailViewController.h */,
+				79A0EFBB1AD9CC20005EBEF5 /* ProfessionalDetailViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -241,6 +277,40 @@
 				79A0EF701AD98D7E005EBEF5 /* Simplify.framework */,
 			);
 			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		79A0EF9C1AD9AE52005EBEF5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				79A0EF9D1AD9AE65005EBEF5 /* ProfessionalCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		79A0EF9D1AD9AE65005EBEF5 /* ProfessionalCell */ = {
+			isa = PBXGroup;
+			children = (
+				79A0EFA61AD9B8D1005EBEF5 /* ProfessionalCell.xib */,
+				79A0EF9E1AD9AE78005EBEF5 /* ProfessionalCell.h */,
+				79A0EF9F1AD9AE78005EBEF5 /* ProfessionalCell.m */,
+			);
+			path = ProfessionalCell;
+			sourceTree = "<group>";
+		};
+		79A0EFB21AD9C5D8005EBEF5 /* Json Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Json Objects";
+			sourceTree = "<group>";
+		};
+		79A0EFB61AD9C621005EBEF5 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				79A0EFB71AD9C640005EBEF5 /* JSONObjects.h */,
+				79A0EFB81AD9C640005EBEF5 /* JSONObjects.m */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,6 +393,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A0EFA71AD9B8D1005EBEF5 /* ProfessionalCell.xib in Resources */,
 				79A0EF711AD98D7E005EBEF5 /* Simplify.bundle in Resources */,
 				79A0EF431AD984FB005EBEF5 /* Main.storyboard in Resources */,
 				79A0EF481AD984FC005EBEF5 /* LaunchScreen.xib in Resources */,
@@ -344,23 +415,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A0EFAD1AD9C38E005EBEF5 /* Professional.m in Sources */,
 				79A0EF371AD984FB005EBEF5 /* AppDelegate.m in Sources */,
 				79A0EF8D1AD9A03D005EBEF5 /* ServicesService.m in Sources */,
 				79A0EF7E1AD998C9005EBEF5 /* ScheduleViewController.m in Sources */,
 				79A0EF841AD99AFD005EBEF5 /* BaseService.m in Sources */,
 				79A0EF8A1AD99F46005EBEF5 /* ProfessionalService.m in Sources */,
 				79A0EF811AD998D8005EBEF5 /* FavoritesViewController.m in Sources */,
+				79A0EFB91AD9C640005EBEF5 /* JSONObjects.m in Sources */,
 				79A0EF341AD984FB005EBEF5 /* main.m in Sources */,
 				79A0EF3A1AD984FB005EBEF5 /* Beautify.xcdatamodeld in Sources */,
 				79A0EF631AD986BE005EBEF5 /* AppHelper.m in Sources */,
 				79A0EF7B1AD998B2005EBEF5 /* ProfileViewController.m in Sources */,
+				79A0EFBC1AD9CC20005EBEF5 /* ProfessionalDetailViewController.m in Sources */,
 				79A0EF781AD998A6005EBEF5 /* ProfessionalListViewController.m in Sources */,
 				79A0EF871AD99B58005EBEF5 /* ConnectionDataService.m in Sources */,
+				79A0EFA51AD9B3EA005EBEF5 /* BaseViewController.m in Sources */,
 				79A0EF901AD9A057005EBEF5 /* CustomerService.m in Sources */,
 				79A0EF6D1AD9892D005EBEF5 /* LoginViewController.m in Sources */,
 				79A0EF691AD98738005EBEF5 /* Model+JSONKit.m in Sources */,
 				79A0EF681AD98738005EBEF5 /* Model.m in Sources */,
 				79A0EF751AD98E05005EBEF5 /* PaymentViewController.m in Sources */,
+				79A0EF931AD9ADAE005EBEF5 /* Service.m in Sources */,
+				79A0EFA01AD9AE78005EBEF5 /* ProfessionalCell.m in Sources */,
+				79A0EF991AD9ADAF005EBEF5 /* Customer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

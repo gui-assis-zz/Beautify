@@ -7,10 +7,12 @@
 //
 
 #import "BaseService.h"
+#import "Professional.h"
 
 @protocol ProfessionalServiceDelegate <NSObject>
 
--(NSArray*) professionalListReceived;
+-(void) professionalReceived:(Professional*) professional;
+-(void) professionalListReceived:(NSArray*) professionalList;
 -(void) professionalServiceError:(NSString*) errorMessage;
 -(void) professionalServiceTimeOut;
 
@@ -21,5 +23,6 @@
 @property (nonatomic) id <ProfessionalServiceDelegate> delegate;
 
 -(void) getProfessionalList;
+-(void) getProfessionalDetailWithId:(NSString*) professionalId;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.h
+//  BaseViewController.h
 //  Beautify
 //
 //  Created by Guilherme Augusto on 11/04/15.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "BaseViewController.h"
 
-@interface ProfileViewController : BaseViewController
+@interface BaseViewController : UIViewController
 
 @end

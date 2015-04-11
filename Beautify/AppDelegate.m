@@ -8,14 +8,18 @@
 
 #import "AppDelegate.h"
 
+#import "Professional.h"
+#import "Service.h"
+#import "Customer.h"
+
 @interface AppDelegate ()
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
+    [self customNavigationBar];
     return YES;
 }
 
@@ -106,6 +110,15 @@
     _managedObjectContext = [[NSManagedObjectContext alloc] init];
     [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     return _managedObjectContext;
+}
+
+-(void) customNavigationBar{
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.984 green:0.475 blue:0.737 alpha:1]];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
+                                                           [UIFont fontWithName:@"Helvetica" size:21.0], NSFontAttributeName, nil]];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 }
 
 #pragma mark - Core Data Saving support

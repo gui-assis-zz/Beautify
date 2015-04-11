@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "AppHelper.h"
+#import "JSONObjects.h"
 
 @interface BaseService : NSObject
 

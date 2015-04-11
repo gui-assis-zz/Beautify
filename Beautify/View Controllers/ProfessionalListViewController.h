@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
+#import "ProfessionalService.h"
+#import "Professional.h"
+#import "Service.h"
 
-@interface ProfessionalListViewController : UIViewController
+@interface ProfessionalListViewController : BaseViewController<ProfessionalServiceDelegate, UITableViewDataSource, UITableViewDelegate>
+
+@property (strong, nonatomic) IBOutlet UITableView *table;
+@property (nonatomic, strong) ProfessionalService *professionalService;
 
 @end

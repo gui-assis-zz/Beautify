@@ -1,23 +1,24 @@
 //
-//  PaymentViewController.m
+//  BaseViewController.m
 //  Beautify
 //
 //  Created by Guilherme Augusto on 11/04/15.
 //  Copyright (c) 2015 Cousins Corp. All rights reserved.
 //
 
-#import "PaymentViewController.h"
-#import "AppHelper.h"
+#import "BaseViewController.h"
 
-@interface PaymentViewController ()
+@interface BaseViewController ()
 
 @end
 
-@implementation PaymentViewController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    [self setNeedsStatusBarAppearanceUpdate];
+    [self.navigationController setNavigationBarHidden:NO];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 }
 
 - (void)didReceiveMemoryWarning {

@@ -18,12 +18,11 @@
 @implementation ConnectionDataService
 
 +(NSString*)getBaseURL {
-    return @"http://192.168.0.0/beautify";
-    
+    return @"http://10.0.0.11:8080/app/rs";
 }
 
 +(NSString *)getUrlConnection:(NSString *)context{
-    return [NSString stringWithFormat:@"%@/rest/%@", [ConnectionDataService getBaseURL], context];
+    return [NSString stringWithFormat:@"%@/v1/%@", [ConnectionDataService getBaseURL], context];
 }
 
 +(NSString *)getUrlConnectionForServices:(NSString *)context{

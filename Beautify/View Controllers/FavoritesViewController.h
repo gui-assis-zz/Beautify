@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface FavoritesViewController : UIViewController
+@interface FavoritesViewController : BaseViewController
 
 @end
