@@ -21,6 +21,10 @@
 		79A0EF711AD98D7E005EBEF5 /* Simplify.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EF6F1AD98D7E005EBEF5 /* Simplify.bundle */; };
 		79A0EF721AD98D7E005EBEF5 /* Simplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A0EF701AD98D7E005EBEF5 /* Simplify.framework */; };
 		79A0EF751AD98E05005EBEF5 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF741AD98E05005EBEF5 /* PaymentViewController.m */; };
+		79A0EF781AD998A6005EBEF5 /* ProfessionalListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF771AD998A6005EBEF5 /* ProfessionalListViewController.m */; };
+		79A0EF7B1AD998B2005EBEF5 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF7A1AD998B2005EBEF5 /* ProfileViewController.m */; };
+		79A0EF7E1AD998C9005EBEF5 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF7D1AD998C9005EBEF5 /* ScheduleViewController.m */; };
+		79A0EF811AD998D8005EBEF5 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF801AD998D8005EBEF5 /* FavoritesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,14 @@
 		79A0EF701AD98D7E005EBEF5 /* Simplify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Simplify.framework; sourceTree = "<group>"; };
 		79A0EF731AD98E05005EBEF5 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
 		79A0EF741AD98E05005EBEF5 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
+		79A0EF761AD998A6005EBEF5 /* ProfessionalListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfessionalListViewController.h; sourceTree = "<group>"; };
+		79A0EF771AD998A6005EBEF5 /* ProfessionalListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessionalListViewController.m; sourceTree = "<group>"; };
+		79A0EF791AD998B2005EBEF5 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		79A0EF7A1AD998B2005EBEF5 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		79A0EF7C1AD998C9005EBEF5 /* ScheduleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleViewController.h; sourceTree = "<group>"; };
+		79A0EF7D1AD998C9005EBEF5 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
+		79A0EF7F1AD998D8005EBEF5 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
+		79A0EF801AD998D8005EBEF5 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +185,14 @@
 				79A0EF6C1AD9892D005EBEF5 /* LoginViewController.m */,
 				79A0EF731AD98E05005EBEF5 /* PaymentViewController.h */,
 				79A0EF741AD98E05005EBEF5 /* PaymentViewController.m */,
+				79A0EF761AD998A6005EBEF5 /* ProfessionalListViewController.h */,
+				79A0EF771AD998A6005EBEF5 /* ProfessionalListViewController.m */,
+				79A0EF791AD998B2005EBEF5 /* ProfileViewController.h */,
+				79A0EF7A1AD998B2005EBEF5 /* ProfileViewController.m */,
+				79A0EF7C1AD998C9005EBEF5 /* ScheduleViewController.h */,
+				79A0EF7D1AD998C9005EBEF5 /* ScheduleViewController.m */,
+				79A0EF7F1AD998D8005EBEF5 /* FavoritesViewController.h */,
+				79A0EF801AD998D8005EBEF5 /* FavoritesViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -300,9 +320,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				79A0EF371AD984FB005EBEF5 /* AppDelegate.m in Sources */,
+				79A0EF7E1AD998C9005EBEF5 /* ScheduleViewController.m in Sources */,
+				79A0EF811AD998D8005EBEF5 /* FavoritesViewController.m in Sources */,
 				79A0EF341AD984FB005EBEF5 /* main.m in Sources */,
 				79A0EF3A1AD984FB005EBEF5 /* Beautify.xcdatamodeld in Sources */,
 				79A0EF631AD986BE005EBEF5 /* AppHelper.m in Sources */,
+				79A0EF7B1AD998B2005EBEF5 /* ProfileViewController.m in Sources */,
+				79A0EF781AD998A6005EBEF5 /* ProfessionalListViewController.m in Sources */,
 				79A0EF6D1AD9892D005EBEF5 /* LoginViewController.m in Sources */,
 				79A0EF691AD98738005EBEF5 /* Model+JSONKit.m in Sources */,
 				79A0EF681AD98738005EBEF5 /* Model.m in Sources */,
