@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Simplify/SIMChargeCardViewController.h>
 
-@interface PaymentViewController : UIViewController
+@interface PaymentViewController : UIViewController<SIMChargeCardViewControllerDelegate>
 
 @end
