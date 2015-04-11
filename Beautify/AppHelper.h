@@ -19,4 +19,7 @@
 +(NSString*) getPrivateKey;
 +(NSString*) getPublicKey;
 
++(NSString*) getUserSession;
++(void) setUserSession:(NSString*) userSession;
+
 @end

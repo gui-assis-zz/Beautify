@@ -22,4 +22,15 @@
     return PUBLIC_KEY;
 }
 
++(NSString *)getUserSession{
+    AppDelegate *delegate = ((AppDelegate *)[[UIApplication sharedApplication] delegate]);
+    return [delegate userSession];
+}
+
++(void)setUserSession:(NSString *)userSession{
+    AppDelegate *delegate = ((AppDelegate *)[[UIApplication sharedApplication] delegate]);
+    [delegate setUserSession:userSession];
+}
+
+
 @end

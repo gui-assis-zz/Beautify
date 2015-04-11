@@ -25,6 +25,11 @@
 		79A0EF7B1AD998B2005EBEF5 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF7A1AD998B2005EBEF5 /* ProfileViewController.m */; };
 		79A0EF7E1AD998C9005EBEF5 /* ScheduleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF7D1AD998C9005EBEF5 /* ScheduleViewController.m */; };
 		79A0EF811AD998D8005EBEF5 /* FavoritesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF801AD998D8005EBEF5 /* FavoritesViewController.m */; };
+		79A0EF841AD99AFD005EBEF5 /* BaseService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF831AD99AFD005EBEF5 /* BaseService.m */; };
+		79A0EF871AD99B58005EBEF5 /* ConnectionDataService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF861AD99B58005EBEF5 /* ConnectionDataService.m */; };
+		79A0EF8A1AD99F46005EBEF5 /* ProfessionalService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF891AD99F46005EBEF5 /* ProfessionalService.m */; };
+		79A0EF8D1AD9A03D005EBEF5 /* ServicesService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF8C1AD9A03D005EBEF5 /* ServicesService.m */; };
+		79A0EF901AD9A057005EBEF5 /* CustomerService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF8F1AD9A057005EBEF5 /* CustomerService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +75,16 @@
 		79A0EF7D1AD998C9005EBEF5 /* ScheduleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleViewController.m; sourceTree = "<group>"; };
 		79A0EF7F1AD998D8005EBEF5 /* FavoritesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoritesViewController.h; sourceTree = "<group>"; };
 		79A0EF801AD998D8005EBEF5 /* FavoritesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoritesViewController.m; sourceTree = "<group>"; };
+		79A0EF821AD99AFD005EBEF5 /* BaseService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseService.h; sourceTree = "<group>"; };
+		79A0EF831AD99AFD005EBEF5 /* BaseService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseService.m; sourceTree = "<group>"; };
+		79A0EF851AD99B58005EBEF5 /* ConnectionDataService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectionDataService.h; sourceTree = "<group>"; };
+		79A0EF861AD99B58005EBEF5 /* ConnectionDataService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectionDataService.m; sourceTree = "<group>"; };
+		79A0EF881AD99F46005EBEF5 /* ProfessionalService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfessionalService.h; sourceTree = "<group>"; };
+		79A0EF891AD99F46005EBEF5 /* ProfessionalService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessionalService.m; sourceTree = "<group>"; };
+		79A0EF8B1AD9A03D005EBEF5 /* ServicesService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServicesService.h; sourceTree = "<group>"; };
+		79A0EF8C1AD9A03D005EBEF5 /* ServicesService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServicesService.m; sourceTree = "<group>"; };
+		79A0EF8E1AD9A057005EBEF5 /* CustomerService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerService.h; sourceTree = "<group>"; };
+		79A0EF8F1AD9A057005EBEF5 /* CustomerService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomerService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,6 +189,16 @@
 		79A0EF5F1AD98563005EBEF5 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				79A0EF821AD99AFD005EBEF5 /* BaseService.h */,
+				79A0EF831AD99AFD005EBEF5 /* BaseService.m */,
+				79A0EF851AD99B58005EBEF5 /* ConnectionDataService.h */,
+				79A0EF861AD99B58005EBEF5 /* ConnectionDataService.m */,
+				79A0EF881AD99F46005EBEF5 /* ProfessionalService.h */,
+				79A0EF891AD99F46005EBEF5 /* ProfessionalService.m */,
+				79A0EF8B1AD9A03D005EBEF5 /* ServicesService.h */,
+				79A0EF8C1AD9A03D005EBEF5 /* ServicesService.m */,
+				79A0EF8E1AD9A057005EBEF5 /* CustomerService.h */,
+				79A0EF8F1AD9A057005EBEF5 /* CustomerService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -320,13 +345,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				79A0EF371AD984FB005EBEF5 /* AppDelegate.m in Sources */,
+				79A0EF8D1AD9A03D005EBEF5 /* ServicesService.m in Sources */,
 				79A0EF7E1AD998C9005EBEF5 /* ScheduleViewController.m in Sources */,
+				79A0EF841AD99AFD005EBEF5 /* BaseService.m in Sources */,
+				79A0EF8A1AD99F46005EBEF5 /* ProfessionalService.m in Sources */,
 				79A0EF811AD998D8005EBEF5 /* FavoritesViewController.m in Sources */,
 				79A0EF341AD984FB005EBEF5 /* main.m in Sources */,
 				79A0EF3A1AD984FB005EBEF5 /* Beautify.xcdatamodeld in Sources */,
 				79A0EF631AD986BE005EBEF5 /* AppHelper.m in Sources */,
 				79A0EF7B1AD998B2005EBEF5 /* ProfileViewController.m in Sources */,
 				79A0EF781AD998A6005EBEF5 /* ProfessionalListViewController.m in Sources */,
+				79A0EF871AD99B58005EBEF5 /* ConnectionDataService.m in Sources */,
+				79A0EF901AD9A057005EBEF5 /* CustomerService.m in Sources */,
 				79A0EF6D1AD9892D005EBEF5 /* LoginViewController.m in Sources */,
 				79A0EF691AD98738005EBEF5 /* Model+JSONKit.m in Sources */,
 				79A0EF681AD98738005EBEF5 /* Model.m in Sources */,

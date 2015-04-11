@@ -161,22 +161,7 @@
                     <view key="view" contentMode="scaleToFill" id="eYP-1K-Eun">
                         <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1p-sx-gtG">
-                                <rect key="frame" x="277" y="285" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="btnPaymentClick:" destination="FxA-hh-zno" eventType="touchUpInside" id="Dr0-Y7-zgs"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="centerX" secondItem="H1p-sx-gtG" secondAttribute="centerX" id="5jw-wI-nI7"/>
-                            <constraint firstAttribute="centerY" secondItem="H1p-sx-gtG" secondAttribute="centerY" id="oKV-9a-bu9"/>
-                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="lff-IE-U0Y"/>
                 </viewController>
