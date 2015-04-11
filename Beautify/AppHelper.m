@@ -14,4 +14,12 @@
     return [((AppDelegate *)[[UIApplication sharedApplication] delegate]) managedObjectContext];
 }
 
++(NSString *)getPrivateKey{
+    return PRIVATE_KEY;
+}
+
++(NSString *)getPublicKey{
+    return PUBLIC_KEY;
+}
+
 @end

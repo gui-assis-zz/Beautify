@@ -17,6 +17,10 @@
 		79A0EF631AD986BE005EBEF5 /* AppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF621AD986BE005EBEF5 /* AppHelper.m */; };
 		79A0EF681AD98738005EBEF5 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF651AD98738005EBEF5 /* Model.m */; };
 		79A0EF691AD98738005EBEF5 /* Model+JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF671AD98738005EBEF5 /* Model+JSONKit.m */; };
+		79A0EF6D1AD9892D005EBEF5 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF6C1AD9892D005EBEF5 /* LoginViewController.m */; };
+		79A0EF711AD98D7E005EBEF5 /* Simplify.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EF6F1AD98D7E005EBEF5 /* Simplify.bundle */; };
+		79A0EF721AD98D7E005EBEF5 /* Simplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79A0EF701AD98D7E005EBEF5 /* Simplify.framework */; };
+		79A0EF751AD98E05005EBEF5 /* PaymentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF741AD98E05005EBEF5 /* PaymentViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		79A0EF651AD98738005EBEF5 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
 		79A0EF661AD98738005EBEF5 /* Model+JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Model+JSONKit.h"; sourceTree = "<group>"; };
 		79A0EF671AD98738005EBEF5 /* Model+JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Model+JSONKit.m"; sourceTree = "<group>"; };
+		79A0EF6B1AD9892D005EBEF5 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		79A0EF6C1AD9892D005EBEF5 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		79A0EF6F1AD98D7E005EBEF5 /* Simplify.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Simplify.bundle; sourceTree = "<group>"; };
+		79A0EF701AD98D7E005EBEF5 /* Simplify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Simplify.framework; sourceTree = "<group>"; };
+		79A0EF731AD98E05005EBEF5 /* PaymentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentViewController.h; sourceTree = "<group>"; };
+		79A0EF741AD98E05005EBEF5 /* PaymentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A0EF721AD98D7E005EBEF5 /* Simplify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,16 +102,17 @@
 			children = (
 				79A0EF351AD984FB005EBEF5 /* AppDelegate.h */,
 				79A0EF361AD984FB005EBEF5 /* AppDelegate.m */,
+				79A0EF611AD986BE005EBEF5 /* AppHelper.h */,
+				79A0EF621AD986BE005EBEF5 /* AppHelper.m */,
 				79A0EF411AD984FB005EBEF5 /* Main.storyboard */,
 				79A0EF441AD984FC005EBEF5 /* Images.xcassets */,
 				79A0EF461AD984FC005EBEF5 /* LaunchScreen.xib */,
+				79A0EF6E1AD98D3B005EBEF5 /* Frameworks */,
 				79A0EF5D1AD98563005EBEF5 /* Components */,
 				79A0EF5E1AD98563005EBEF5 /* Domain */,
 				79A0EF5F1AD98563005EBEF5 /* Service */,
 				79A0EF601AD98563005EBEF5 /* View Controllers */,
 				79A0EF311AD984FB005EBEF5 /* Supporting Files */,
-				79A0EF611AD986BE005EBEF5 /* AppHelper.h */,
-				79A0EF621AD986BE005EBEF5 /* AppHelper.m */,
 			);
 			path = Beautify;
 			sourceTree = "<group>";
@@ -157,6 +169,10 @@
 		79A0EF601AD98563005EBEF5 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				79A0EF6B1AD9892D005EBEF5 /* LoginViewController.h */,
+				79A0EF6C1AD9892D005EBEF5 /* LoginViewController.m */,
+				79A0EF731AD98E05005EBEF5 /* PaymentViewController.h */,
+				79A0EF741AD98E05005EBEF5 /* PaymentViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -171,6 +187,15 @@
 			);
 			name = Model;
 			path = ../Domain;
+			sourceTree = "<group>";
+		};
+		79A0EF6E1AD98D3B005EBEF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79A0EF6F1AD98D7E005EBEF5 /* Simplify.bundle */,
+				79A0EF701AD98D7E005EBEF5 /* Simplify.framework */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A0EF711AD98D7E005EBEF5 /* Simplify.bundle in Resources */,
 				79A0EF431AD984FB005EBEF5 /* Main.storyboard in Resources */,
 				79A0EF481AD984FC005EBEF5 /* LaunchScreen.xib in Resources */,
 				79A0EF451AD984FC005EBEF5 /* Images.xcassets in Resources */,
@@ -277,8 +303,10 @@
 				79A0EF341AD984FB005EBEF5 /* main.m in Sources */,
 				79A0EF3A1AD984FB005EBEF5 /* Beautify.xcdatamodeld in Sources */,
 				79A0EF631AD986BE005EBEF5 /* AppHelper.m in Sources */,
+				79A0EF6D1AD9892D005EBEF5 /* LoginViewController.m in Sources */,
 				79A0EF691AD98738005EBEF5 /* Model+JSONKit.m in Sources */,
 				79A0EF681AD98738005EBEF5 /* Model.m in Sources */,
+				79A0EF751AD98E05005EBEF5 /* PaymentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +387,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -395,6 +424,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -404,6 +434,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Beautify/Frameworks",
+				);
 				INFOPLIST_FILE = Beautify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -414,6 +448,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Beautify/Frameworks",
+				);
 				INFOPLIST_FILE = Beautify/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
