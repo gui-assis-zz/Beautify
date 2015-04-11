@@ -10,8 +10,6 @@
 		79A0EF341AD984FB005EBEF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF331AD984FB005EBEF5 /* main.m */; };
 		79A0EF371AD984FB005EBEF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF361AD984FB005EBEF5 /* AppDelegate.m */; };
 		79A0EF3A1AD984FB005EBEF5 /* Beautify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF381AD984FB005EBEF5 /* Beautify.xcdatamodeld */; };
-		79A0EF3D1AD984FB005EBEF5 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF3C1AD984FB005EBEF5 /* MasterViewController.m */; };
-		79A0EF401AD984FB005EBEF5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EF3F1AD984FB005EBEF5 /* DetailViewController.m */; };
 		79A0EF431AD984FB005EBEF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EF411AD984FB005EBEF5 /* Main.storyboard */; };
 		79A0EF451AD984FC005EBEF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EF441AD984FC005EBEF5 /* Images.xcassets */; };
 		79A0EF481AD984FC005EBEF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EF461AD984FC005EBEF5 /* LaunchScreen.xib */; };
@@ -35,10 +33,6 @@
 		79A0EF351AD984FB005EBEF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		79A0EF361AD984FB005EBEF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		79A0EF391AD984FB005EBEF5 /* Beautify.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beautify.xcdatamodel; sourceTree = "<group>"; };
-		79A0EF3B1AD984FB005EBEF5 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		79A0EF3C1AD984FB005EBEF5 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		79A0EF3E1AD984FB005EBEF5 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		79A0EF3F1AD984FB005EBEF5 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		79A0EF421AD984FB005EBEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79A0EF441AD984FC005EBEF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		79A0EF471AD984FC005EBEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -88,14 +82,13 @@
 			children = (
 				79A0EF351AD984FB005EBEF5 /* AppDelegate.h */,
 				79A0EF361AD984FB005EBEF5 /* AppDelegate.m */,
-				79A0EF3B1AD984FB005EBEF5 /* MasterViewController.h */,
-				79A0EF3C1AD984FB005EBEF5 /* MasterViewController.m */,
-				79A0EF3E1AD984FB005EBEF5 /* DetailViewController.h */,
-				79A0EF3F1AD984FB005EBEF5 /* DetailViewController.m */,
 				79A0EF411AD984FB005EBEF5 /* Main.storyboard */,
 				79A0EF441AD984FC005EBEF5 /* Images.xcassets */,
 				79A0EF461AD984FC005EBEF5 /* LaunchScreen.xib */,
-				79A0EF381AD984FB005EBEF5 /* Beautify.xcdatamodeld */,
+				79A0EF5D1AD98563005EBEF5 /* Components */,
+				79A0EF5E1AD98563005EBEF5 /* Domain */,
+				79A0EF5F1AD98563005EBEF5 /* Service */,
+				79A0EF601AD98563005EBEF5 /* View Controllers */,
 				79A0EF311AD984FB005EBEF5 /* Supporting Files */,
 			);
 			path = Beautify;
@@ -125,6 +118,35 @@
 				79A0EF521AD984FC005EBEF5 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79A0EF5D1AD98563005EBEF5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		79A0EF5E1AD98563005EBEF5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				79A0EF381AD984FB005EBEF5 /* Beautify.xcdatamodeld */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		79A0EF5F1AD98563005EBEF5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		79A0EF601AD98563005EBEF5 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,8 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79A0EF401AD984FB005EBEF5 /* DetailViewController.m in Sources */,
-				79A0EF3D1AD984FB005EBEF5 /* MasterViewController.m in Sources */,
 				79A0EF371AD984FB005EBEF5 /* AppDelegate.m in Sources */,
 				79A0EF341AD984FB005EBEF5 /* main.m in Sources */,
 				79A0EF3A1AD984FB005EBEF5 /* Beautify.xcdatamodeld in Sources */,
@@ -444,7 +464,8 @@
 				79A0EF391AD984FB005EBEF5 /* Beautify.xcdatamodel */,
 			);
 			currentVersion = 79A0EF391AD984FB005EBEF5 /* Beautify.xcdatamodel */;
-			path = Beautify.xcdatamodeld;
+			name = Beautify.xcdatamodeld;
+			path = ../Beautify.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
