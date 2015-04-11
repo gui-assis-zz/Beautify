@@ -51,6 +51,15 @@
             professional.identifier = [NSString stringWithFormat:@"%@", [dicProfessional objectForKey:@"identifier"]];
             professional.email = [dicProfessional objectForKey:@"email"];
             
+            for (NSDictionary *dicService in [dicProfessional objectForKey:@"services"]) {
+                Service *service = [Service new];
+                service.name = [dicService objectForKey:@"name"];
+                service.price = [dicService objectForKey:@"price"];
+                service.identifier = [NSString stringWithFormat:@"%@", [dicService objectForKey:@"identifier"]];
+                
+                [professional addServicesObject:service];
+            }
+            
             [dicReturn addObject:professional];
         }
     } else {
@@ -60,6 +69,15 @@
         professional.mobilePhone = [dicData objectForKey:@"mobilePhone"];
         professional.identifier = [NSString stringWithFormat:@"%@", [dicData objectForKey:@"identifier"]];
         professional.email = [dicData objectForKey:@"email"];
+        
+        for (NSDictionary *dicService in [dicData objectForKey:@"services"]) {
+            Service *service = [Service new];
+            service.name = [dicService objectForKey:@"name"];
+            service.price = [dicService objectForKey:@"price"];
+            service.identifier = [dicService objectForKey:@"identifier"];
+            
+            [professional addServicesObject:service];
+        }
         
         [dicReturn addObject:professional];
     }

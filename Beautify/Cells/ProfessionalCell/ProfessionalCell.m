@@ -11,7 +11,12 @@
 @implementation ProfessionalCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    
+    self.professionalImage.layer.cornerRadius = self.professionalImage.bounds.size.width/2;
+    self.professionalImage.layer.masksToBounds = YES;
+    self.professionalImage.layer.borderWidth = 2;
+    self.professionalImage.layer.borderColor = [UIColor colorWithRed:0.984 green:0.475 blue:0.737 alpha:1].CGColor;
+    self.professionalImage.layer.backgroundColor = [UIColor colorWithWhite:1 alpha:0.2].CGColor;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

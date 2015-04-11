@@ -12,9 +12,10 @@
 #import "Professional.h"
 #import "Service.h"
 
-@interface ProfessionalListViewController : BaseViewController<ProfessionalServiceDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface ProfessionalListViewController : BaseViewController<ProfessionalServiceDelegate, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate, UISearchResultsUpdating, UISearchDisplayDelegate, UISearchControllerDelegate>
 
 @property (strong, nonatomic) IBOutlet UITableView *table;
 @property (nonatomic, strong) ProfessionalService *professionalService;
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 
 @end

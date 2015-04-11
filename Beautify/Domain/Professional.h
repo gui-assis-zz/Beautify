@@ -7,8 +7,7 @@
 //
 
 #import "Model+JSONKit.h"
-
-@class Service;
+#import "Service.h"
 
 @interface Professional : Model
 

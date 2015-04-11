@@ -18,6 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.navigationItem.backBarButtonItem.title = @"";
+    
     self.lblProfessionalName.text = self.professional.name;
 }
 

@@ -13,8 +13,10 @@
 
 @interface ProfessionalListViewController ()
 
+@property (nonatomic, strong) UISearchController *searchController;
 @property (nonatomic, strong) NSMutableArray *professionalList;
-
+@property (nonatomic, strong) NSMutableArray *professionalListFiltered;
+@property (nonatomic) BOOL isFiltered;
 
 @end
 
@@ -51,11 +53,26 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    Professional *professional = [self.professionalList objectAtIndex:indexPath.row];
+    
+    Professional *professional;
+    if (self.isFiltered) {
+        professional = [self.professionalListFiltered objectAtIndex:indexPath.row];
+    } else {
+        professional = [self.professionalList objectAtIndex:indexPath.row];
+    }
+    
     [self.professionalService getProfessionalDetailWithId:professional.identifier];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    int rowCount;
+    if(self.isFiltered)
+        rowCount = [self.professionalListFiltered count];
+    else
+        rowCount = [self.professionalList count];
+    
+    return rowCount;
+    
     return [self.professionalList count];
 }
 
@@ -68,10 +85,15 @@
         cell = [nib objectAtIndex:0];
     }
     
-    Professional *professional = [self.professionalList objectAtIndex:indexPath.row];
+    Professional *professional;
+    if (self.isFiltered) {
+        professional = [self.professionalListFiltered objectAtIndex:indexPath.row];
+    } else {
+        professional = [self.professionalList objectAtIndex:indexPath.row];
+    }
     
     cell.lblName.text = professional.name;
-    cell.lblService.text = [self getServicesFromProfessional:professional];
+    cell.lblPhone.text = professional.mobilePhone;
     cell.professionalImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@-thumb", professional.identifier]];
     
     return cell;
@@ -106,18 +128,6 @@
         
         professionalDetailVC.professional = (Professional*) sender;
     }
-}
-
-#pragma mark - Methods
-
--(NSString*) getServicesFromProfessional:(Professional*) professional{
-    NSMutableString *strServices = [NSMutableString new];
-    
-    for (Service *service in professional.services) {
-        [strServices appendString:[NSString stringWithFormat:@", %@", service.name]];
-    }
-    
-    return strServices;
 }
 
 @end

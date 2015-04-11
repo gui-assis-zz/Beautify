@@ -11,7 +11,7 @@
 @interface ProfessionalCell : UITableViewCell
 
 @property (strong, nonatomic) IBOutlet UILabel *lblName;
-@property (strong, nonatomic) IBOutlet UILabel *lblService;
 @property (strong, nonatomic) IBOutlet UIImageView *professionalImage;
+@property (strong, nonatomic) IBOutlet UILabel *lblPhone;
 
 @end
