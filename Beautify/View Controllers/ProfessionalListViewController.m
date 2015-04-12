@@ -92,6 +92,10 @@
         professional = [self.professionalList objectAtIndex:indexPath.row];
     }
     
+    UIView *selectionColor = [[UIView alloc] init];
+    selectionColor.backgroundColor = [UIColor colorWithRed:0.984 green:0.475 blue:0.737 alpha:0.3f];
+    cell.selectedBackgroundView = selectionColor;
+    
     cell.lblName.text = professional.name;
     cell.lblPhone.text = professional.mobilePhone;
     cell.professionalImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@-thumb", professional.identifier]];

@@ -7,8 +7,15 @@
 //
 
 #import "ScheduleViewController.h"
+#import "ScheduleCell.h"
+#import "Schedule.h"
+#import "Professional.h"
+#import "Service.h"
 
 @interface ScheduleViewController ()
+
+@property (strong, nonatomic) IBOutlet UITableView *table;
+@property (nonatomic, strong) NSMutableArray *services;
 
 @end
 
@@ -16,7 +23,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
+    self.services = [NSMutableArray new];
+    
+    self.table.delegate = self;
+    self.table.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,14 +39,40 @@
     return UIStatusBarStyleLightContent;
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UITableViewDelegate
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
 }
-*/
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    Schedule *schedule = [self.services objectAtIndex:indexPath.row];
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return [self.services count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *scheduleCell = @"ScheduleCell";
+    
+    ScheduleCell *cell = (ScheduleCell *)[self.table dequeueReusableCellWithIdentifier:scheduleCell];
+    if (cell == nil) {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:scheduleCell owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
+    
+    Schedule *schedule = [self.services objectAtIndex:indexPath.row];
+    
+    UIView *selectionColor = [[UIView alloc] init];
+    selectionColor.backgroundColor = [UIColor colorWithRed:0.984 green:0.475 blue:0.737 alpha:0.3f];
+    cell.selectedBackgroundView = selectionColor;
+    
+    cell.lblProfessionalName.text = [NSString stringWithFormat:@"%@ - %@", schedule.professional.name, schedule.professional.mobilePhone];
+    cell.lblServiceName.text = schedule.service.name;
+    
+    return cell;
+}
+
 
 @end

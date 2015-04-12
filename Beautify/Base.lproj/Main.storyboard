@@ -52,9 +52,19 @@
                     <view key="view" contentMode="scaleToFill" id="gef-64-ghQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LIn-dr-0Ee">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Agendamentos" id="x4T-z3-7rh"/>
+                    <connections>
+                        <outlet property="table" destination="LIn-dr-0Ee" id="N5C-4t-9UV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQb-H2-wbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -200,6 +210,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ARz-3d-tAf"/>
                     <connections>
+                        <outlet property="lblProfessionalAddress" destination="VAt-De-bN4" id="REa-ev-mZS"/>
                         <outlet property="lblProfessionalName" destination="aDq-bg-zgf" id="Ru2-3U-oyV"/>
                     </connections>
                 </viewController>

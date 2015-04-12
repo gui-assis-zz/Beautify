@@ -38,6 +38,9 @@
 		79A0EFAD1AD9C38E005EBEF5 /* Professional.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFAC1AD9C38E005EBEF5 /* Professional.m */; };
 		79A0EFB91AD9C640005EBEF5 /* JSONObjects.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFB81AD9C640005EBEF5 /* JSONObjects.m */; };
 		79A0EFBC1AD9CC20005EBEF5 /* ProfessionalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFBB1AD9CC20005EBEF5 /* ProfessionalDetailViewController.m */; };
+		79A0EFC01AD9EEC0005EBEF5 /* ScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFBF1AD9EEC0005EBEF5 /* ScheduleCell.m */; };
+		79A0EFC21AD9EED4005EBEF5 /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EFC11AD9EED4005EBEF5 /* ScheduleCell.xib */; };
+		79A0EFC51AD9EFFA005EBEF5 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFC41AD9EFFA005EBEF5 /* Schedule.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,11 @@
 		79A0EFB81AD9C640005EBEF5 /* JSONObjects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONObjects.m; sourceTree = "<group>"; };
 		79A0EFBA1AD9CC20005EBEF5 /* ProfessionalDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfessionalDetailViewController.h; sourceTree = "<group>"; };
 		79A0EFBB1AD9CC20005EBEF5 /* ProfessionalDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfessionalDetailViewController.m; sourceTree = "<group>"; };
+		79A0EFBE1AD9EEC0005EBEF5 /* ScheduleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleCell.h; path = ScheduleCell/ScheduleCell.h; sourceTree = "<group>"; };
+		79A0EFBF1AD9EEC0005EBEF5 /* ScheduleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleCell.m; path = ScheduleCell/ScheduleCell.m; sourceTree = "<group>"; };
+		79A0EFC11AD9EED4005EBEF5 /* ScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleCell.xib; path = ScheduleCell/ScheduleCell.xib; sourceTree = "<group>"; };
+		79A0EFC31AD9EFFA005EBEF5 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		79A0EFC41AD9EFFA005EBEF5 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +222,8 @@
 				79A0EF921AD9ADAE005EBEF5 /* Service.m */,
 				79A0EFAB1AD9C38E005EBEF5 /* Professional.h */,
 				79A0EFAC1AD9C38E005EBEF5 /* Professional.m */,
+				79A0EFC31AD9EFFA005EBEF5 /* Schedule.h */,
+				79A0EFC41AD9EFFA005EBEF5 /* Schedule.m */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -282,6 +292,7 @@
 		79A0EF9C1AD9AE52005EBEF5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				79A0EFBD1AD9EE9C005EBEF5 /* ScheduleCell */,
 				79A0EF9D1AD9AE65005EBEF5 /* ProfessionalCell */,
 			);
 			path = Cells;
@@ -311,6 +322,16 @@
 				79A0EFB81AD9C640005EBEF5 /* JSONObjects.m */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		79A0EFBD1AD9EE9C005EBEF5 /* ScheduleCell */ = {
+			isa = PBXGroup;
+			children = (
+				79A0EFBE1AD9EEC0005EBEF5 /* ScheduleCell.h */,
+				79A0EFBF1AD9EEC0005EBEF5 /* ScheduleCell.m */,
+				79A0EFC11AD9EED4005EBEF5 /* ScheduleCell.xib */,
+			);
+			name = ScheduleCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +416,7 @@
 			files = (
 				79A0EFA71AD9B8D1005EBEF5 /* ProfessionalCell.xib in Resources */,
 				79A0EF711AD98D7E005EBEF5 /* Simplify.bundle in Resources */,
+				79A0EFC21AD9EED4005EBEF5 /* ScheduleCell.xib in Resources */,
 				79A0EF431AD984FB005EBEF5 /* Main.storyboard in Resources */,
 				79A0EF481AD984FC005EBEF5 /* LaunchScreen.xib in Resources */,
 				79A0EF451AD984FC005EBEF5 /* Images.xcassets in Resources */,
@@ -433,9 +455,11 @@
 				79A0EFA51AD9B3EA005EBEF5 /* BaseViewController.m in Sources */,
 				79A0EF901AD9A057005EBEF5 /* CustomerService.m in Sources */,
 				79A0EF6D1AD9892D005EBEF5 /* LoginViewController.m in Sources */,
+				79A0EFC01AD9EEC0005EBEF5 /* ScheduleCell.m in Sources */,
 				79A0EF691AD98738005EBEF5 /* Model+JSONKit.m in Sources */,
 				79A0EF681AD98738005EBEF5 /* Model.m in Sources */,
 				79A0EF751AD98E05005EBEF5 /* PaymentViewController.m in Sources */,
+				79A0EFC51AD9EFFA005EBEF5 /* Schedule.m in Sources */,
 				79A0EF931AD9ADAE005EBEF5 /* Service.m in Sources */,
 				79A0EFA01AD9AE78005EBEF5 /* ProfessionalCell.m in Sources */,
 				79A0EF991AD9ADAF005EBEF5 /* Customer.m in Sources */,

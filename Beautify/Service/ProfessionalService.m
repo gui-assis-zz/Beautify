@@ -74,7 +74,7 @@
             Service *service = [Service new];
             service.name = [dicService objectForKey:@"name"];
             service.price = [dicService objectForKey:@"price"];
-            service.identifier = [dicService objectForKey:@"identifier"];
+            service.identifier = [NSString stringWithFormat:@"%@", [dicService objectForKey:@"identifier"]];
             
             [professional addServicesObject:service];
         }

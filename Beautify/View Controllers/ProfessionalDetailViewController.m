@@ -11,6 +11,7 @@
 @interface ProfessionalDetailViewController ()
 
 @property (strong, nonatomic) IBOutlet UILabel *lblProfessionalName;
+@property (strong, nonatomic) IBOutlet UILabel *lblProfessionalAddress;
 
 @end
 
@@ -22,6 +23,8 @@
     self.navigationItem.backBarButtonItem.title = @"";
     
     self.lblProfessionalName.text = self.professional.name;
+    self.lblProfessionalAddress.text = self.professional.address;
+    
 }
 
 - (void)didReceiveMemoryWarning {
