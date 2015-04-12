@@ -11,7 +11,8 @@
 @implementation ScheduleCell
 
 - (void)awakeFromNib {
-    // Initialization code
+    self.lblServiceName.font = [UIFont fontWithName:@"BebasNeueBook" size:18];
+    self.lblProfessionalName.font = [UIFont fontWithName:@"BebasNeueRegular" size:24];
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

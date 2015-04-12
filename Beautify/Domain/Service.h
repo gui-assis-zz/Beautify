@@ -13,5 +13,6 @@
 @property (nonatomic, retain) NSString * name;
 @property (nonatomic, retain) NSNumber * price;
 @property (nonatomic, retain) NSString * identifier;
+@property (nonatomic) BOOL isSelected;
 
 @end

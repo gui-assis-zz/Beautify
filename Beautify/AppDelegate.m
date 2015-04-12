@@ -89,6 +89,9 @@
         error = [NSError errorWithDomain:@"YOUR_ERROR_DOMAIN" code:9999 userInfo:dict];
         // Replace this with code to handle the error appropriately.
         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+        
+        [[NSFileManager defaultManager] removeItemAtURL:storeURL error:nil];
+        
         NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
         abort();
     }
@@ -116,7 +119,7 @@
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.984 green:0.475 blue:0.737 alpha:1]];
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
                                                            [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,
-                                                           [UIFont fontWithName:@"Helvetica" size:21.0], NSFontAttributeName, nil]];
+                                                           [UIFont fontWithName:@"BebasNeueRegular" size:24.0], NSFontAttributeName, nil]];
     
     [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
 }

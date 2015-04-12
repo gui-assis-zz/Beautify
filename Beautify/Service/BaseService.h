@@ -18,6 +18,7 @@
 @property (nonatomic, strong) NSURLConnection *connection;
 @property (nonatomic, strong) NSTimer *timeOutTimer;
 
+-(void) postWithUrl:(NSString*) strUrl andJson:(NSString*)strJson andTimeOut:(int)timeOut;
 -(void) requestToUrl:(NSString *)strUrl timeOut:(int)timeOut;
 -(void) onTimeout:(NSString*) message;
 -(void) treatReceivedData;

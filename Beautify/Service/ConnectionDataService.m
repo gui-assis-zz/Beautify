@@ -18,7 +18,7 @@
 @implementation ConnectionDataService
 
 +(NSString*)getBaseURL {
-    return @"http://10.0.0.26:8080/app/rs";
+    return @"http://10.0.0.11:8080/app/rs";
 }
 
 +(NSString *)getUrlConnection:(NSString *)context{

@@ -23,6 +23,27 @@
 
 #pragma mark - Connection
 
+-(void)postWithUrl:(NSString*) strUrl andJson:(NSString*)strJson andTimeOut:(int)timeOut{
+    self.isTimeOut = NO;
+    
+    NSString *strUrlPost = [NSString stringWithFormat:@"%@", strUrl];
+    
+    NSMutableData *body = [NSMutableData new];
+    [body appendData:[strJson dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    NSMutableURLRequest *request = [NSMutableURLRequest new];
+
+    [request setURL:[NSURL URLWithString:strUrlPost]];
+    [request setCachePolicy:NSURLRequestReloadIgnoringLocalCacheData];
+    [request setHTTPShouldHandleCookies:NO];
+    [request setTimeoutInterval:timeOut];
+    [request setHTTPMethod:@"POST"];
+    [request setValue:@"application/json" forHTTPHeaderField: @"Content-Type"];
+    [request setHTTPBody:body];
+    
+    [self connect:request timeOut:timeOut];
+}
+
 -(void)requestToUrl:(NSString *)strUrl timeOut:(int)timeOut{
     self.isTimeOut = NO;
     

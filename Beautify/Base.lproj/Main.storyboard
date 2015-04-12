@@ -53,7 +53,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="LIn-dr-0Ee">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" sectionHeaderHeight="22" sectionFooterHeight="22" id="LIn-dr-0Ee">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -64,11 +64,27 @@
                     <navigationItem key="navigationItem" title="Agendamentos" id="x4T-z3-7rh"/>
                     <connections>
                         <outlet property="table" destination="LIn-dr-0Ee" id="N5C-4t-9UV"/>
+                        <segue destination="k7E-Cb-FML" kind="push" identifier="sgDetailSchedule" id="yun-Bn-dTE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FQb-H2-wbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1697.5999999999999" y="108.86666666666666"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WmG-rV-XJR">
+            <objects>
+                <viewController id="k7E-Cb-FML" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nnb-NX-03b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="nbf-Ud-enQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FVJ-Wq-X8t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2118" y="108"/>
         </scene>
         <!--Meus Favoritos-->
         <scene sceneID="pYB-nk-fzi">
@@ -105,7 +121,7 @@
             <objects>
                 <viewController title="Profissionais" id="caE-eY-MmM" customClass="ProfessionalListViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="x24-sC-i2E">
-                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="110" sectionHeaderHeight="22" sectionFooterHeight="22" id="nHT-fS-Fg0">
@@ -163,43 +179,120 @@
             <objects>
                 <viewController title="Detalhe Profissional" id="ntg-Kb-Gat" customClass="ProfessionalDetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bgc-H2-nci">
-                        <rect key="frame" x="0.0" y="64" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Sod-VC-PC6">
-                                <rect key="frame" x="0.0" y="65" width="320" height="164"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foto-perfil-1" id="Sod-VC-PC6">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANA PAULA" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aDq-bg-zgf">
-                                <rect key="frame" x="16" y="180" width="189" height="21"/>
+                                <rect key="frame" x="16" y="111" width="189" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(21) 99999-9999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hZt-To-BOx">
-                                <rect key="frame" x="16" y="204" width="151" height="21"/>
+                                <rect key="frame" x="16" y="135" width="151" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ENDEREÇO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6sL-4e-xOm">
-                                <rect key="frame" x="16" y="237" width="288" height="21"/>
+                                <rect key="frame" x="12" y="172" width="261" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RUA DINORAH SILVA, 13, JARDIM MERITI, SÃO JOÃO DE MERITI - RJ" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VAt-De-bN4">
-                                <rect key="frame" x="16" y="259" width="288" height="47"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RUA DINORAH SILVA, 13, JARDIM MERITI, SÃO JOÃO DE MERITI - RJ" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VAt-De-bN4">
+                                <rect key="frame" x="12" y="201" width="303" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SERVIÇOS" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="U53-5C-X5x">
-                                <rect key="frame" x="16" y="314" width="85" height="21"/>
+                                <rect key="frame" x="12" y="245" width="85" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Oft-Wd-hKG">
+                                <rect key="frame" x="268" y="117" width="47" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="foto-perfil-fav-on">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnFavoriteClick:" destination="ntg-Kb-Gat" eventType="touchUpInside" id="33L-Rq-Oud"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="38" sectionHeaderHeight="22" sectionFooterHeight="22" id="97j-w9-7eB">
+                                <rect key="frame" x="0.0" y="272" width="320" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Selecionar Data" borderStyle="bezel" textAlignment="center" minimumFontSize="17" id="hMT-nf-CUa">
+                                <rect key="frame" x="16" y="406" width="288" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ARz-3d-tAf">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="9zj-BR-iZ0">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fa6-Zk-JBG">
+                                <rect key="frame" x="-23" y="-15" width="71" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Agendar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnScheduleClick:" destination="ntg-Kb-Gat" eventType="touchUpInside" id="w5X-oG-tiu"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnFavorite" destination="Oft-Wd-hKG" id="kUu-iV-qIy"/>
+                        <outlet property="edtDate" destination="hMT-nf-CUa" id="BUr-xr-rTa"/>
+                        <outlet property="lblAddress" destination="6sL-4e-xOm" id="IUB-wc-vca"/>
+                        <outlet property="lblMobilePhone" destination="hZt-To-BOx" id="69y-dX-i9Z"/>
+                        <outlet property="lblProfessionalAddress" destination="VAt-De-bN4" id="REa-ev-mZS"/>
+                        <outlet property="lblProfessionalName" destination="aDq-bg-zgf" id="Ru2-3U-oyV"/>
+                        <outlet property="lblServices" destination="U53-5C-X5x" id="hGQ-nt-Ewq"/>
+                        <outlet property="professionalImage" destination="Sod-VC-PC6" id="ahJ-9d-gxM"/>
+                        <outlet property="table" destination="97j-w9-7eB" id="Pio-zG-Gu2"/>
+                        <segue destination="NU9-SW-fY9" kind="push" identifier="sgScheduleOk" id="D09-Gj-pWg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s4E-hn-s2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2083" y="-577"/>
+        </scene>
+        <!--Schedule Confirmation View Controller-->
+        <scene sceneID="zfP-yj-QsA">
+            <objects>
+                <viewController id="NU9-SW-fY9" customClass="ScheduleConfirmationViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ycM-YU-gZL">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5cv-iF-atp">
+                                <rect key="frame" x="23" y="20" width="281" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="HzI-IL-Mvm">
+                                <rect key="frame" x="23" y="58" width="281" height="57"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -208,15 +301,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ARz-3d-tAf"/>
+                    <navigationItem key="navigationItem" id="Qqa-pv-exp"/>
                     <connections>
-                        <outlet property="lblProfessionalAddress" destination="VAt-De-bN4" id="REa-ev-mZS"/>
-                        <outlet property="lblProfessionalName" destination="aDq-bg-zgf" id="Ru2-3U-oyV"/>
+                        <outlet property="lblScheduleDescription" destination="HzI-IL-Mvm" id="T5w-Sg-FB1"/>
+                        <outlet property="lblScheduleTitle" destination="5cv-iF-atp" id="eWo-98-R1u"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="s4E-hn-s2n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lke-ew-wY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2083" y="-577"/>
+            <point key="canvasLocation" x="2496" y="-577"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="dpG-9T-dYa">
@@ -260,7 +353,8 @@
                 <navigationController title="Profissionais" automaticallyAdjustsScrollViewInsets="NO" id="Pbw-FS-UKf" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Profissionais" id="VPI-dH-k2i"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hiP-lA-RQ1">
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="hiP-lA-RQ1">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -334,6 +428,10 @@
             <point key="canvasLocation" x="1264.5333333333333" y="1524.1333333333332"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="foto-perfil-1" width="320" height="180"/>
+        <image name="foto-perfil-fav-on" width="16" height="15"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

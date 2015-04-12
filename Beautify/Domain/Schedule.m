@@ -14,7 +14,8 @@
 @implementation Schedule
 
 @dynamic date;
+@dynamic price;
 @dynamic professional;
-@dynamic service;
+@dynamic services;
 
 @end

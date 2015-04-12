@@ -98,7 +98,7 @@
     
     cell.lblName.text = professional.name;
     cell.lblPhone.text = professional.mobilePhone;
-    cell.professionalImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"%@-thumb", professional.identifier]];
+    cell.professionalImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"foto-%@", professional.identifier]];
     
     return cell;
 }

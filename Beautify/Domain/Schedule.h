@@ -13,7 +13,16 @@
 @interface Schedule : Model
 
 @property (nonatomic, retain) NSString * date;
+@property (nonatomic, retain) NSNumber * price;
 @property (nonatomic, retain) Professional *professional;
-@property (nonatomic, retain) Service *service;
+@property (nonatomic, retain) NSSet *services;
+@end
+
+@interface Schedule (CoreDataGeneratedAccessors)
+
+- (void)addServicesObject:(Service *)value;
+- (void)removeServicesObject:(Service *)value;
+- (void)addServices:(NSSet *)values;
+- (void)removeServices:(NSSet *)values;
 
 @end

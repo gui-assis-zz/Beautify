@@ -8,8 +8,9 @@
 
 #import "BaseViewController.h"
 #import "Professional.h"
+#import "ScheduleService.h"
 
-@interface ProfessionalDetailViewController : BaseViewController
+@interface ProfessionalDetailViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate, ScheduleServiceDelegate>
 
 @property (nonatomic, strong) Professional *professional;
 

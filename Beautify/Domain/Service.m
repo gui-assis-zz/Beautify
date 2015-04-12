@@ -14,5 +14,6 @@
 @dynamic name;
 @dynamic price;
 @dynamic identifier;
+@synthesize isSelected;
 
 @end

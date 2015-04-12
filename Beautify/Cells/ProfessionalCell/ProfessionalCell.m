@@ -12,6 +12,9 @@
 
 - (void)awakeFromNib {
     
+    self.lblName.font = [UIFont fontWithName:@"BebasNeueRegular" size:24];
+    self.lblPhone.font = [UIFont fontWithName:@"BebasNeueBook" size:18];
+    
     self.professionalImage.layer.cornerRadius = self.professionalImage.bounds.size.width/2;
     self.professionalImage.layer.masksToBounds = YES;
     self.professionalImage.layer.borderWidth = 2;

@@ -40,7 +40,16 @@
 		79A0EFBC1AD9CC20005EBEF5 /* ProfessionalDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFBB1AD9CC20005EBEF5 /* ProfessionalDetailViewController.m */; };
 		79A0EFC01AD9EEC0005EBEF5 /* ScheduleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFBF1AD9EEC0005EBEF5 /* ScheduleCell.m */; };
 		79A0EFC21AD9EED4005EBEF5 /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EFC11AD9EED4005EBEF5 /* ScheduleCell.xib */; };
-		79A0EFC51AD9EFFA005EBEF5 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFC41AD9EFFA005EBEF5 /* Schedule.m */; };
+		79A0EFCB1AD9F2EA005EBEF5 /* Schedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFCA1AD9F2EA005EBEF5 /* Schedule.m */; };
+		79A0EFCE1AD9F33F005EBEF5 /* ScheduleDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFCD1AD9F33F005EBEF5 /* ScheduleDetailViewController.m */; };
+		79A0EFD21AD9F51B005EBEF5 /* BebasNeue-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EFD01AD9F51B005EBEF5 /* BebasNeue-Book.otf */; };
+		79A0EFD31AD9F51B005EBEF5 /* BebasNeue-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EFD11AD9F51B005EBEF5 /* BebasNeue-Regular.otf */; };
+		79A0EFD71ADA0785005EBEF5 /* ServiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFD61ADA0785005EBEF5 /* ServiceCell.m */; };
+		79A0EFD91ADA078F005EBEF5 /* ServiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EFD81ADA078F005EBEF5 /* ServiceCell.xib */; };
+		79A0EFFA1ADA22DC005EBEF5 /* DateAcessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFF91ADA22DC005EBEF5 /* DateAcessoryView.m */; };
+		79A0EFFC1ADA22F1005EBEF5 /* DateAcessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EFFB1ADA22F1005EBEF5 /* DateAcessoryView.xib */; };
+		79A0EFFF1ADA2CB3005EBEF5 /* ScheduleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFFE1ADA2CB3005EBEF5 /* ScheduleService.m */; };
+		79A0F0021ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0F0011ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,8 +123,22 @@
 		79A0EFBE1AD9EEC0005EBEF5 /* ScheduleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ScheduleCell.h; path = ScheduleCell/ScheduleCell.h; sourceTree = "<group>"; };
 		79A0EFBF1AD9EEC0005EBEF5 /* ScheduleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ScheduleCell.m; path = ScheduleCell/ScheduleCell.m; sourceTree = "<group>"; };
 		79A0EFC11AD9EED4005EBEF5 /* ScheduleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ScheduleCell.xib; path = ScheduleCell/ScheduleCell.xib; sourceTree = "<group>"; };
-		79A0EFC31AD9EFFA005EBEF5 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
-		79A0EFC41AD9EFFA005EBEF5 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		79A0EFC91AD9F2EA005EBEF5 /* Schedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Schedule.h; sourceTree = "<group>"; };
+		79A0EFCA1AD9F2EA005EBEF5 /* Schedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Schedule.m; sourceTree = "<group>"; };
+		79A0EFCC1AD9F33F005EBEF5 /* ScheduleDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleDetailViewController.h; sourceTree = "<group>"; };
+		79A0EFCD1AD9F33F005EBEF5 /* ScheduleDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleDetailViewController.m; sourceTree = "<group>"; };
+		79A0EFD01AD9F51B005EBEF5 /* BebasNeue-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Book.otf"; sourceTree = "<group>"; };
+		79A0EFD11AD9F51B005EBEF5 /* BebasNeue-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BebasNeue-Regular.otf"; sourceTree = "<group>"; };
+		79A0EFD51ADA0785005EBEF5 /* ServiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ServiceCell.h; path = ServiceCell/ServiceCell.h; sourceTree = "<group>"; };
+		79A0EFD61ADA0785005EBEF5 /* ServiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ServiceCell.m; path = ServiceCell/ServiceCell.m; sourceTree = "<group>"; };
+		79A0EFD81ADA078F005EBEF5 /* ServiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ServiceCell.xib; sourceTree = "<group>"; };
+		79A0EFF81ADA22DC005EBEF5 /* DateAcessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateAcessoryView.h; path = DateAccessoryView/DateAcessoryView.h; sourceTree = "<group>"; };
+		79A0EFF91ADA22DC005EBEF5 /* DateAcessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DateAcessoryView.m; path = DateAccessoryView/DateAcessoryView.m; sourceTree = "<group>"; };
+		79A0EFFB1ADA22F1005EBEF5 /* DateAcessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DateAcessoryView.xib; path = DateAccessoryView/DateAcessoryView.xib; sourceTree = "<group>"; };
+		79A0EFFD1ADA2CB3005EBEF5 /* ScheduleService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleService.h; sourceTree = "<group>"; };
+		79A0EFFE1ADA2CB3005EBEF5 /* ScheduleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleService.m; sourceTree = "<group>"; };
+		79A0F0001ADA37D1005EBEF5 /* ScheduleConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleConfirmationViewController.h; sourceTree = "<group>"; };
+		79A0F0011ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleConfirmationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +188,7 @@
 				79A0EF411AD984FB005EBEF5 /* Main.storyboard */,
 				79A0EF441AD984FC005EBEF5 /* Images.xcassets */,
 				79A0EF461AD984FC005EBEF5 /* LaunchScreen.xib */,
+				79A0EFCF1AD9F51B005EBEF5 /* Resources */,
 				79A0EFB61AD9C621005EBEF5 /* Util */,
 				79A0EF9C1AD9AE52005EBEF5 /* Cells */,
 				79A0EF6E1AD98D3B005EBEF5 /* Frameworks */,
@@ -216,14 +240,14 @@
 			isa = PBXGroup;
 			children = (
 				79A0EF381AD984FB005EBEF5 /* Beautify.xcdatamodeld */,
+				79A0EFC91AD9F2EA005EBEF5 /* Schedule.h */,
+				79A0EFCA1AD9F2EA005EBEF5 /* Schedule.m */,
 				79A0EF971AD9ADAF005EBEF5 /* Customer.h */,
 				79A0EF981AD9ADAF005EBEF5 /* Customer.m */,
 				79A0EF911AD9ADAE005EBEF5 /* Service.h */,
 				79A0EF921AD9ADAE005EBEF5 /* Service.m */,
 				79A0EFAB1AD9C38E005EBEF5 /* Professional.h */,
 				79A0EFAC1AD9C38E005EBEF5 /* Professional.m */,
-				79A0EFC31AD9EFFA005EBEF5 /* Schedule.h */,
-				79A0EFC41AD9EFFA005EBEF5 /* Schedule.m */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -241,6 +265,8 @@
 				79A0EF8C1AD9A03D005EBEF5 /* ServicesService.m */,
 				79A0EF8E1AD9A057005EBEF5 /* CustomerService.h */,
 				79A0EF8F1AD9A057005EBEF5 /* CustomerService.m */,
+				79A0EFFD1ADA2CB3005EBEF5 /* ScheduleService.h */,
+				79A0EFFE1ADA2CB3005EBEF5 /* ScheduleService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -264,6 +290,10 @@
 				79A0EFA41AD9B3EA005EBEF5 /* BaseViewController.m */,
 				79A0EFBA1AD9CC20005EBEF5 /* ProfessionalDetailViewController.h */,
 				79A0EFBB1AD9CC20005EBEF5 /* ProfessionalDetailViewController.m */,
+				79A0EFCC1AD9F33F005EBEF5 /* ScheduleDetailViewController.h */,
+				79A0EFCD1AD9F33F005EBEF5 /* ScheduleDetailViewController.m */,
+				79A0F0001ADA37D1005EBEF5 /* ScheduleConfirmationViewController.h */,
+				79A0F0011ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -292,6 +322,8 @@
 		79A0EF9C1AD9AE52005EBEF5 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				79A0EFF71ADA22B8005EBEF5 /* DateAccessoryView */,
+				79A0EFD41ADA0766005EBEF5 /* ServiceCell */,
 				79A0EFBD1AD9EE9C005EBEF5 /* ScheduleCell */,
 				79A0EF9D1AD9AE65005EBEF5 /* ProfessionalCell */,
 			);
@@ -332,6 +364,35 @@
 				79A0EFC11AD9EED4005EBEF5 /* ScheduleCell.xib */,
 			);
 			name = ScheduleCell;
+			sourceTree = "<group>";
+		};
+		79A0EFCF1AD9F51B005EBEF5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				79A0EFD01AD9F51B005EBEF5 /* BebasNeue-Book.otf */,
+				79A0EFD11AD9F51B005EBEF5 /* BebasNeue-Regular.otf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		79A0EFD41ADA0766005EBEF5 /* ServiceCell */ = {
+			isa = PBXGroup;
+			children = (
+				79A0EFD51ADA0785005EBEF5 /* ServiceCell.h */,
+				79A0EFD61ADA0785005EBEF5 /* ServiceCell.m */,
+				79A0EFD81ADA078F005EBEF5 /* ServiceCell.xib */,
+			);
+			name = ServiceCell;
+			sourceTree = "<group>";
+		};
+		79A0EFF71ADA22B8005EBEF5 /* DateAccessoryView */ = {
+			isa = PBXGroup;
+			children = (
+				79A0EFF81ADA22DC005EBEF5 /* DateAcessoryView.h */,
+				79A0EFF91ADA22DC005EBEF5 /* DateAcessoryView.m */,
+				79A0EFFB1ADA22F1005EBEF5 /* DateAcessoryView.xib */,
+			);
+			name = DateAccessoryView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -414,9 +475,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79A0EFD31AD9F51B005EBEF5 /* BebasNeue-Regular.otf in Resources */,
+				79A0EFFC1ADA22F1005EBEF5 /* DateAcessoryView.xib in Resources */,
 				79A0EFA71AD9B8D1005EBEF5 /* ProfessionalCell.xib in Resources */,
 				79A0EF711AD98D7E005EBEF5 /* Simplify.bundle in Resources */,
+				79A0EFD21AD9F51B005EBEF5 /* BebasNeue-Book.otf in Resources */,
 				79A0EFC21AD9EED4005EBEF5 /* ScheduleCell.xib in Resources */,
+				79A0EFD91ADA078F005EBEF5 /* ServiceCell.xib in Resources */,
 				79A0EF431AD984FB005EBEF5 /* Main.storyboard in Resources */,
 				79A0EF481AD984FC005EBEF5 /* LaunchScreen.xib in Resources */,
 				79A0EF451AD984FC005EBEF5 /* Images.xcassets in Resources */,
@@ -446,6 +511,7 @@
 				79A0EF811AD998D8005EBEF5 /* FavoritesViewController.m in Sources */,
 				79A0EFB91AD9C640005EBEF5 /* JSONObjects.m in Sources */,
 				79A0EF341AD984FB005EBEF5 /* main.m in Sources */,
+				79A0EFFA1ADA22DC005EBEF5 /* DateAcessoryView.m in Sources */,
 				79A0EF3A1AD984FB005EBEF5 /* Beautify.xcdatamodeld in Sources */,
 				79A0EF631AD986BE005EBEF5 /* AppHelper.m in Sources */,
 				79A0EF7B1AD998B2005EBEF5 /* ProfileViewController.m in Sources */,
@@ -455,13 +521,17 @@
 				79A0EFA51AD9B3EA005EBEF5 /* BaseViewController.m in Sources */,
 				79A0EF901AD9A057005EBEF5 /* CustomerService.m in Sources */,
 				79A0EF6D1AD9892D005EBEF5 /* LoginViewController.m in Sources */,
+				79A0F0021ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m in Sources */,
 				79A0EFC01AD9EEC0005EBEF5 /* ScheduleCell.m in Sources */,
 				79A0EF691AD98738005EBEF5 /* Model+JSONKit.m in Sources */,
 				79A0EF681AD98738005EBEF5 /* Model.m in Sources */,
+				79A0EFD71ADA0785005EBEF5 /* ServiceCell.m in Sources */,
+				79A0EFCE1AD9F33F005EBEF5 /* ScheduleDetailViewController.m in Sources */,
 				79A0EF751AD98E05005EBEF5 /* PaymentViewController.m in Sources */,
-				79A0EFC51AD9EFFA005EBEF5 /* Schedule.m in Sources */,
+				79A0EFCB1AD9F2EA005EBEF5 /* Schedule.m in Sources */,
 				79A0EF931AD9ADAE005EBEF5 /* Service.m in Sources */,
 				79A0EFA01AD9AE78005EBEF5 /* ProfessionalCell.m in Sources */,
+				79A0EFFF1ADA2CB3005EBEF5 /* ScheduleService.m in Sources */,
 				79A0EF991AD9ADAF005EBEF5 /* Customer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
