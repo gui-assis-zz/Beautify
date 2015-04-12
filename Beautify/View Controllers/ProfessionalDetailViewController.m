@@ -11,9 +11,11 @@
 #import "Service.h"
 #import "Schedule.h"
 #import "ScheduleConfirmationViewController.h"
+#import "CustomActivityView.h"
 
 @interface ProfessionalDetailViewController ()
 
+@property (strong, nonatomic) CustomActivityView *activityIndicator;
 @property (strong, nonatomic) IBOutlet UIButton *btnFavorite;
 @property (strong, nonatomic) IBOutlet UIImageView *professionalImage;
 @property (strong, nonatomic) IBOutlet UILabel *lblAddress;
@@ -34,6 +36,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.activityIndicator = [CustomActivityView new];
     
     self.scheduleService = [ScheduleService new];
     self.scheduleService.delegate = self;
@@ -168,6 +172,7 @@
 }
 
 - (IBAction)btnScheduleClick:(id)sender {
+    [self.activityIndicator exibir];
     [self.edtDate resignFirstResponder];
     
     Schedule *schedule = [Schedule new];
@@ -208,11 +213,12 @@
 #pragma mark - ScheduleServiceDelegate
 
 -(void)scheduleOk{
+    [self.activityIndicator esconder];
     [self performSegueWithIdentifier:@"sgScheduleOk" sender:nil];
 }
 
 -(void)scheduleError{
-    
+    [self.activityIndicator esconder];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{

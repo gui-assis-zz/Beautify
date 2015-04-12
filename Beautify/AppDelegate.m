@@ -116,6 +116,14 @@
 }
 
 -(void) customNavigationBar{
+    UIPageControl *pageControl = [UIPageControl appearance];
+    pageControl.pageIndicatorTintColor = [UIColor lightGrayColor];
+    pageControl.currentPageIndicatorTintColor = [UIColor whiteColor];
+    pageControl.backgroundColor = [UIColor blackColor];
+    
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.984 green:0.475 blue:0.737 alpha:1]];
+//    [[UITabBar appearance] setBarTintColor:[UIColor colorWithRed:0.984 green:0.475 blue:0.737 alpha:1]];
+    
     [[UINavigationBar appearance] setBarTintColor:[UIColor colorWithRed:0.984 green:0.475 blue:0.737 alpha:1]];
     [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
                                                            [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName,

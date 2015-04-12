@@ -17,5 +17,7 @@
 @dynamic price;
 @dynamic professional;
 @dynamic services;
+@dynamic identifier;
+@dynamic status;
 
 @end

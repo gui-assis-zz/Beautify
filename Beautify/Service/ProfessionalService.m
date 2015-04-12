@@ -38,6 +38,18 @@
 }
 
 -(void)treatReceivedData{
+    
+    if (self.strRequestData.length <= 0) {
+        [self errorMessage:@"Nenhum dado encontrado"];
+        return;
+    }
+    
+    NSRange strRangeErro = [self.strRequestData rangeOfString:@"exception"];
+    if (strRangeErro.length > 0) {
+        [self errorMessage:@"Erro ao processar requisição"];
+        return;
+    }
+    
     NSMutableArray *dicReturn = [NSMutableArray new];
     
     NSDictionary *dicData = [self.strRequestData objectFromJSONString];

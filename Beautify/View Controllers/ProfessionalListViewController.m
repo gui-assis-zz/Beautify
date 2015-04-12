@@ -40,6 +40,9 @@
 
 -(void)viewWillAppear:(BOOL)animated{
     [self.professionalService getProfessionalList];
+    
+//    [self.tabBarItem setImage:[[UIImage imageNamed:@"icon-tab-prof-off"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
+//    [self.tabBarItem setSelectedImage:[[UIImage imageNamed:@"icon-tab-prof-on"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
 }
 
 - (void)didReceiveMemoryWarning {

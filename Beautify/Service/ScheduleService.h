@@ -13,6 +13,7 @@
 
 @protocol ScheduleServiceDelegate <NSObject>
 
+-(void) scheduleList:(NSMutableArray*) scheduleList;
 -(void) scheduleOk;
 -(void) scheduleError;
 
@@ -21,6 +22,8 @@
 @interface ScheduleService : BaseService
 
 @property (nonatomic) id <ScheduleServiceDelegate> delegate;
+
 -(void) generateSchedule:(Schedule*) schedule;
+-(void) getMySchedules;
 
 @end

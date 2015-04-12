@@ -9,6 +9,10 @@
 #import "ProfileViewController.h"
 
 @interface ProfileViewController ()
+@property (strong, nonatomic) IBOutlet UILabel *lblCustomerName;
+@property (strong, nonatomic) IBOutlet UILabel *lblCustomerPhone;
+@property (strong, nonatomic) IBOutlet UILabel *lblAddress;
+@property (strong, nonatomic) IBOutlet UILabel *lblAddressValue;
 
 @end
 
@@ -16,7 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.lblAddress.font = [UIFont fontWithName:@"BebasNeueBook" size:18];
+    self.lblAddressValue.font = [UIFont fontWithName:@"BebasNeueBook" size:24];
+    self.lblCustomerName.font = [UIFont fontWithName:@"BebasNeueRegular" size:24];
+    self.lblCustomerPhone.font = [UIFont fontWithName:@"BebasNeueRegular" size:24];
+    
+    self.lblCustomerName.text = @"MARIA EDUARDA";
+    self.lblCustomerPhone.text = @"(21) 91234-5678";
+    self.lblAddress.text = @"ENDEREÇO";
+    self.lblAddressValue.text = @"AV. DAS AMÉRICAS, 100, BARRA DA TIJUCA - RJ";
 }
 
 - (void)didReceiveMemoryWarning {
@@ -28,14 +40,9 @@
     return UIStatusBarStyleLightContent;
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)btnSairClick:(id)sender {
+    [self.navigationController popToRootViewControllerAnimated:YES];
 }
-*/
+
 
 @end

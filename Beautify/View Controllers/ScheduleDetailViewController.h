@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "Schedule.h"
+#import <Simplify/SIMChargeCardViewController.h>
+#import "PaymentService.h"
+#import "CustomActivityView.h"
 
-@interface ScheduleDetailViewController : UIViewController
+@interface ScheduleDetailViewController : UIViewController<SIMChargeCardViewControllerDelegate, PaymentServiceDelegate>
 
 @property (nonatomic, strong) Schedule *schedule;
 

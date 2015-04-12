@@ -26,9 +26,15 @@
     [super viewDidLoad];
     
     self.services = [NSMutableArray new];
+    self.scheduleService = [ScheduleService new];
+    self.scheduleService.delegate = self;
     
     self.table.delegate = self;
     self.table.dataSource = self;
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.scheduleService getMySchedules];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,29 +76,48 @@
     selectionColor.backgroundColor = [UIColor colorWithRed:0.984 green:0.475 blue:0.737 alpha:0.3f];
     cell.selectedBackgroundView = selectionColor;
     
-    cell.lblName.text = [NSString stringWithFormat:@"%@ - %@", schedule.professional.name, schedule.professional.mobilePhone];
-    cell.lblPhone.text = [self getServicesNameWithSchedule:schedule];
+//    NSString *serviceName = [(Service*) schedule.services.anyObject name];
+    
+    cell.lblName.text = [NSString stringWithFormat:@"%@", schedule.professional.name];
+    
+    cell.lblPhone.text = [NSString stringWithFormat:@"%@ - R$%.2f", schedule.date, [self getTotalFromSchedule:schedule]];
+    
     cell.professionalImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"foto-%@", schedule.professional.identifier]];
     
     return cell;
     
 }
 
--(NSString*) getServicesNameWithSchedule:(Schedule*) schedule{
-    NSMutableString *strReturn = [NSMutableString new];
+-(float) getTotalFromSchedule:(Schedule*) schedule{
+    float total = 0;
+    
     for (Service *service in schedule.services) {
-        [strReturn appendString:[NSString stringWithFormat:@", %@", service.name]];
+        total = total + [service.price floatValue];
     }
     
-    return strReturn;
+    return total/10;
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     if ([segue.identifier isEqualToString:@"sgDetailSchedule"]) {
         ScheduleDetailViewController *scheduleDetailVC = (ScheduleDetailViewController*) segue.destinationViewController;
-        scheduleDetailVC.schedule = (Schedule*) sender; 
+        scheduleDetailVC.schedule = (Schedule*) sender;
     }
 }
 
+#pragma mark - ScheduleServiceDelegate
+
+-(void)scheduleError{
+    
+}
+
+-(void)scheduleList:(NSMutableArray *)scheduleList{
+    self.services = scheduleList;
+    [self.table reloadData];
+}
+
+-(void)scheduleOk{
+    
+}
 
 @end

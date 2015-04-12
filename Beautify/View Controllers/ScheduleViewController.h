@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
+#import "ScheduleService.h"
 
-@interface ScheduleViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate>
+@interface ScheduleViewController : BaseViewController<UITableViewDataSource, UITableViewDelegate, ScheduleServiceDelegate>
+
+@property (nonatomic, strong) ScheduleService *scheduleService;
 
 @end

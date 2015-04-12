@@ -12,8 +12,10 @@
 
 @interface Schedule : Model
 
+@property (nonatomic, retain) NSString * status;
 @property (nonatomic, retain) NSString * date;
 @property (nonatomic, retain) NSNumber * price;
+@property (nonatomic, retain) NSString * identifier;
 @property (nonatomic, retain) Professional *professional;
 @property (nonatomic, retain) NSSet *services;
 @end
