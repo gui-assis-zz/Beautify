@@ -50,6 +50,7 @@
 		79A0EFFC1ADA22F1005EBEF5 /* DateAcessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79A0EFFB1ADA22F1005EBEF5 /* DateAcessoryView.xib */; };
 		79A0EFFF1ADA2CB3005EBEF5 /* ScheduleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFFE1ADA2CB3005EBEF5 /* ScheduleService.m */; };
 		79A0F0021ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0F0011ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m */; };
+		79F45CAB1ADA3C2900675031 /* FavoriteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F45CAA1ADA3C2900675031 /* FavoriteService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -139,6 +140,8 @@
 		79A0EFFE1ADA2CB3005EBEF5 /* ScheduleService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleService.m; sourceTree = "<group>"; };
 		79A0F0001ADA37D1005EBEF5 /* ScheduleConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScheduleConfirmationViewController.h; sourceTree = "<group>"; };
 		79A0F0011ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleConfirmationViewController.m; sourceTree = "<group>"; };
+		79F45CA91ADA3C2900675031 /* FavoriteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteService.h; sourceTree = "<group>"; };
+		79F45CAA1ADA3C2900675031 /* FavoriteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +270,8 @@
 				79A0EF8F1AD9A057005EBEF5 /* CustomerService.m */,
 				79A0EFFD1ADA2CB3005EBEF5 /* ScheduleService.h */,
 				79A0EFFE1ADA2CB3005EBEF5 /* ScheduleService.m */,
+				79F45CA91ADA3C2900675031 /* FavoriteService.h */,
+				79F45CAA1ADA3C2900675031 /* FavoriteService.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -531,6 +536,7 @@
 				79A0EFCB1AD9F2EA005EBEF5 /* Schedule.m in Sources */,
 				79A0EF931AD9ADAE005EBEF5 /* Service.m in Sources */,
 				79A0EFA01AD9AE78005EBEF5 /* ProfessionalCell.m in Sources */,
+				79F45CAB1ADA3C2900675031 /* FavoriteService.m in Sources */,
 				79A0EFFF1ADA2CB3005EBEF5 /* ScheduleService.m in Sources */,
 				79A0EF991AD9ADAF005EBEF5 /* Customer.m in Sources */,
 			);
@@ -737,6 +743,7 @@
 				79A0EF591AD984FC005EBEF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		79A0EF5A1AD984FC005EBEF5 /* Build configuration list for PBXNativeTarget "BeautifyTests" */ = {
 			isa = XCConfigurationList;
@@ -745,6 +752,7 @@
 				79A0EF5C1AD984FC005EBEF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
