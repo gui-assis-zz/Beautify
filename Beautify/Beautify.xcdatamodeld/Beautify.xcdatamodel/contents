@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14C109" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7549" systemVersion="14D131" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
     <entity name="Customer" representedClassName="Customer" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Favorite" syncable="YES">
+        <relationship name="customer" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Customer" syncable="YES"/>
+        <relationship name="professional" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Professional" syncable="YES"/>
     </entity>
     <entity name="Professional" representedClassName="Professional" syncable="YES">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
@@ -27,8 +31,9 @@
     </entity>
     <elements>
         <element name="Customer" positionX="-63" positionY="-18" width="128" height="105"/>
-        <element name="Service" positionX="-54" positionY="-9" width="128" height="90"/>
         <element name="Professional" positionX="-36" positionY="9" width="128" height="135"/>
         <element name="Schedule" positionX="-18" positionY="72" width="128" height="105"/>
+        <element name="Service" positionX="-54" positionY="-9" width="128" height="90"/>
+        <element name="Favorite" positionX="-36" positionY="54" width="128" height="75"/>
     </elements>
 </model>

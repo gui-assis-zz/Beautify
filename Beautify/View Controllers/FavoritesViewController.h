@@ -9,6 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "BaseViewController.h"
 
-@interface FavoritesViewController : BaseViewController
+#import "FavoriteService.h"
+
+@interface FavoritesViewController : BaseViewController<FavoriteServiceDelegate>
+
+@property (nonatomic, strong) FavoriteService *favoriteService;
 
 @end
