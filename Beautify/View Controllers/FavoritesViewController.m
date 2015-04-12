@@ -10,23 +10,55 @@
 
 @interface FavoritesViewController ()
 
+@property (nonatomic, strong) NSMutableArray *favoriteList;
+@property (nonatomic, strong) NSMutableArray *favoriteListFiltered;
+@property (nonatomic) BOOL isFiltered;
+
 @end
 
 @implementation FavoritesViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    self.favoriteList = [NSMutableArray new];
+    self.favoriteService = [FavoriteService new];
+    self.favoriteService.delegate = self;
+    
+    [self setNeedsStatusBarAppearanceUpdate];
 }
+
+-(void)viewWillAppear:(BOOL)animated{
+    [self.favoriteService getFavoriteList:@1];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
     return UIStatusBarStyleLightContent;
 }
+
+#pragma mark - FavoriteServiceDelegate
+
+-(void)favoriteServiceTimeOut {
+    
+}
+
+-(void)favoriteServiceError:(NSString *)errorMessage{
+    
+}
+
+-(void)favoriteReceived:(Favorite *)favorite {
+    [self performSegueWithIdentifier:@"sgDetail" sender:favorite];
+}
+
+-(void)favoriteListReceived:(NSArray *)favoriteList{
+    self.favoriteList = [NSMutableArray arrayWithArray:favoriteList];
+}
+
 
 /*
 #pragma mark - Navigation

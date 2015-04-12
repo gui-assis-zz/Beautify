@@ -8,7 +8,21 @@
 
 #import "BaseService.h"
 
+#import "Favorite.h"
+
+@protocol FavoriteServiceDelegate <NSObject>
+
+-(void) favoriteReceived:(Favorite*) favorite;
+-(void) favoriteListReceived:(NSArray*) favoriteList;
+-(void) favoriteServiceError:(NSString*) errorMessage;
+-(void) favoriteServiceTimeOut;
+
+@end
+
 @interface FavoriteService : BaseService
 
+@property (nonatomic) id <FavoriteServiceDelegate> delegate;
+
+-(void)getFavoriteList:(NSNumber *)customerId;
 
 @end

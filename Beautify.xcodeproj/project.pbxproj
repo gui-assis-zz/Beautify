@@ -51,11 +51,15 @@
 		79A0EFFF1ADA2CB3005EBEF5 /* ScheduleService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0EFFE1ADA2CB3005EBEF5 /* ScheduleService.m */; };
 		79A0F0021ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79A0F0011ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m */; };
 		79F45CAB1ADA3C2900675031 /* FavoriteService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F45CAA1ADA3C2900675031 /* FavoriteService.m */; };
+<<<<<<< HEAD
 		79F45CAE1ADA64D600675031 /* PaymentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F45CAD1ADA64D600675031 /* PaymentService.m */; };
 		79F45CB11ADA6ADF00675031 /* CustomActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F45CAF1ADA6ADF00675031 /* CustomActivityView.m */; };
 		79F45CB41ADA6DCB00675031 /* MasterPassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F45CB31ADA6DCB00675031 /* MasterPassViewController.m */; };
 		79F45CCD1ADA7F7000675031 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F45CCC1ADA7F7000675031 /* ContentViewController.m */; };
 		79F45CD01ADA80CF00675031 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79F45CCF1ADA80CF00675031 /* ViewController.m */; };
+=======
+		A687BCCB1ADA470600B20212 /* Favorite.m in Sources */ = {isa = PBXBuildFile; fileRef = A687BCCA1ADA470600B20212 /* Favorite.m */; };
+>>>>>>> origin/master
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +151,7 @@
 		79A0F0011ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScheduleConfirmationViewController.m; sourceTree = "<group>"; };
 		79F45CA91ADA3C2900675031 /* FavoriteService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FavoriteService.h; sourceTree = "<group>"; };
 		79F45CAA1ADA3C2900675031 /* FavoriteService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FavoriteService.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		79F45CAC1ADA64D600675031 /* PaymentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentService.h; sourceTree = "<group>"; };
 		79F45CAD1ADA64D600675031 /* PaymentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentService.m; sourceTree = "<group>"; };
 		79F45CAF1ADA6ADF00675031 /* CustomActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomActivityView.m; sourceTree = "<group>"; };
@@ -157,6 +162,10 @@
 		79F45CCC1ADA7F7000675031 /* ContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
 		79F45CCE1ADA80CF00675031 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		79F45CCF1ADA80CF00675031 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+=======
+		A687BCC91ADA470600B20212 /* Favorite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Favorite.h; sourceTree = "<group>"; };
+		A687BCCA1ADA470600B20212 /* Favorite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Favorite.m; sourceTree = "<group>"; };
+>>>>>>> origin/master
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +275,8 @@
 				79A0EF921AD9ADAE005EBEF5 /* Service.m */,
 				79A0EFAB1AD9C38E005EBEF5 /* Professional.h */,
 				79A0EFAC1AD9C38E005EBEF5 /* Professional.m */,
+				A687BCC91ADA470600B20212 /* Favorite.h */,
+				A687BCCA1ADA470600B20212 /* Favorite.m */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -561,7 +572,11 @@
 				79F45CD01ADA80CF00675031 /* ViewController.m in Sources */,
 				79A0EFA51AD9B3EA005EBEF5 /* BaseViewController.m in Sources */,
 				79A0EF901AD9A057005EBEF5 /* CustomerService.m in Sources */,
+<<<<<<< HEAD
 				79F45CCD1ADA7F7000675031 /* ContentViewController.m in Sources */,
+=======
+				A687BCCB1ADA470600B20212 /* Favorite.m in Sources */,
+>>>>>>> origin/master
 				79A0EF6D1AD9892D005EBEF5 /* LoginViewController.m in Sources */,
 				79A0F0021ADA37D1005EBEF5 /* ScheduleConfirmationViewController.m in Sources */,
 				79A0EFC01AD9EEC0005EBEF5 /* ScheduleCell.m in Sources */,
